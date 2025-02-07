@@ -1,7 +1,7 @@
 export default function List({ }) {
-    const tekstai = JSON.stringify(['random tekstas kuris yra mano note', 'kitas random tekstas', 'trečias random tekstas'])
+    // const tekstai = JSON.stringify(['random tekstas kuris yra mano note', 'kitas random tekstas', 'trečias random tekstas'])
 
-    localStorage.setItem("notes", tekstai);
+    // localStorage.setItem("notes", tekstai);
 
 
     const notes = JSON.parse(localStorage.getItem("notes"));
