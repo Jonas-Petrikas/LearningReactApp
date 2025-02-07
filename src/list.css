@@ -1,0 +1,17 @@
+.list-bin {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .list-item {
+        margin: 10px;
+        border-bottom: 1px solid cadetblue;
+
+
+    }
+}
