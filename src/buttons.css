@@ -49,3 +49,8 @@
         font-size: 1.25rem;
     }
 }
+
+.buttonX{
+    background-color: transparent;
+    border: 0px solid transparent;
+}
