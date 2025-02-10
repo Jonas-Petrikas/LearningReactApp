@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import './buttons.css';
-import './list.css';
+import './list.scss';
 import List from './Components/List';
 import Input from './Components/Input';
 import { useState } from 'react';
@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button className='button-53'>Spausk mygtuką, nieko nebus</button>
         <List notes={notes} setNotes={setNotes} />
         <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
       </header>

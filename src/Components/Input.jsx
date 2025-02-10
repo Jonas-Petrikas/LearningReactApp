@@ -21,7 +21,7 @@ export default function Input({ note, setNote, notes, setNotes }) {
 
         <div>
             <textarea onChange={add} value={note}></textarea>
-            <button onClick={add2}>Add</button>
+            <button className="button-53" onClick={add2}>Add</button>
         </div>
     )
 }

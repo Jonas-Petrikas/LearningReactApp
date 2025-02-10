@@ -20,7 +20,7 @@ export default function List({ notes, setNotes }) {
     return (
         <>
             <div className="list-bin">
-                {notes.map((el, i) => <div className="list-item" key={i}> <button className="buttonX" id={i} onClick={remove}>x</button> <span>{el}</span></div>)}
+                {notes.map((el, i) => <div className="list-item" key={i}> <span>{el}</span> <button className="button-53" id={i} onClick={remove}>x</button></div>)}
             </div>
         </>
     );

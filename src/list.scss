@@ -6,11 +6,22 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    width: 600px;
+    margin-bottom: 50px;
 
     .list-item {
         margin: 10px;
         border-bottom: 1px solid cadetblue;
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        align-items: center;
+        padding: 0 20px;
+
+        button {
+            width: 50px;
+        }
 
 
     }
