@@ -1,20 +1,21 @@
 import { useEffect } from "react";
 
-export default function List({ notes }) {
+export default function List({ notes, setNotes }) {
 
 
     const remove = e => {
-        notes = notes.filter((el, i) => el = i != e.target.id);
-        console.log(notes);
-        // notes.map((el, i) => {
-        // if (i == e.target.id) {
-        //     notes.filter((el, i) => el[i] != e.target.id);
-        //     console.log(el, i, e.target.id)
-        // }
-        // })
-        // console.log(notes);
-        // return notes;
+        setNotes(n => n = n.filter((el, i) => el = i != e.target.id))
     };
+
+    // notes.map((el, i) => {
+    // if (i == e.target.id) {
+    //     notes.filter((el, i) => el[i] != e.target.id);
+    //     console.log(el, i, e.target.id)
+    // }
+    // })
+    // console.log(notes);
+    // return notes;
+
 
     return (
         <>

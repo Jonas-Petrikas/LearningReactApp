@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <button className='button-53'>Spausk mygtuką, nieko nebus</button>
-        <List notes={notes} />
+        <List notes={notes} setNotes={setNotes} />
         <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
       </header>
     </div>
