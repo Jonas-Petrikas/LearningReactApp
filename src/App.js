@@ -4,15 +4,19 @@ import './buttons.css';
 import './list.css';
 import List from './Components/List';
 import Input from './Components/Input';
+import { useState } from 'react';
 
 function App() {
+
+  const [note, setNote] = useState('');
+  const [notes, setNotes] = useState([]);
+
   return (
     <div className="App">
       <header className="App-header">
         <button className='button-53'>Spausk mygtuką, nieko nebus</button>
-        <List />
-
-        <Input />
+        <List notes={note} />
+        <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
       </header>
     </div>
   );

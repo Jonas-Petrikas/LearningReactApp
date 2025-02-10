@@ -1,23 +1,17 @@
 import { useEffect, useState } from "react";
-import Input from "./Input";
 
-export default function List({ }) {
+export default function List({ note }) {
 
-    const notesText = JSON.parse(localStorage.getItem("notes")) || ['filler', 'filler'];
+    let notesText = JSON.parse(localStorage.getItem("notes"));
 
-    console.log(Input);
-    // console.log(Input)
     useEffect(_ => {
-        console.log('labas');
-    }, []);
-
-
+        notesText = JSON.parse(localStorage.getItem("notes")) || ['filler', 'filler'];
+    }, [note]);
 
 
     return (
         <>
             <div className="list-bin">
-                {/* <Input /> */}
                 {notesText.map((el, i) => <div className="list-item" key={i}> <button className="buttonX">x</button> <span>{el}</span></div>)}
             </div>
         </>
