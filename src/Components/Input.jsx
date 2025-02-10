@@ -14,6 +14,7 @@ export default function Input({ note, setNote, notes, setNotes }) {
     useEffect(_ => {
         const tekstai = JSON.stringify(notes)
         localStorage.setItem("notes", tekstai);
+        console.log('įrašyta')
     }, [notes]);
 
     return (
