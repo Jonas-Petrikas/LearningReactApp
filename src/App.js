@@ -9,13 +9,13 @@ import { useState } from 'react';
 function App() {
 
   const [note, setNote] = useState('');
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem("notes")) || []);
 
   return (
     <div className="App">
       <header className="App-header">
         <button className='button-53'>Spausk mygtuką, nieko nebus</button>
-        <List notes={note} />
+        <List notes={notes} />
         <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
       </header>
     </div>

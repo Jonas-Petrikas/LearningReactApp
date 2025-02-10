@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-export default function List({ note }) {
+export default function List({ notes }) {
 
     let notesText = JSON.parse(localStorage.getItem("notes"));
 
     useEffect(_ => {
         notesText = JSON.parse(localStorage.getItem("notes")) || ['filler', 'filler'];
-    }, [note]);
+    }, [notes]);
 
 
     return (
