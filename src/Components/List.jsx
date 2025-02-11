@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function List({ notes, setNotes, show, setShow }) {
+export default function List({ notes, setNotes, show, setShow, temp, setTemp }) {
 
 
     const remove = e => {
@@ -9,6 +9,8 @@ export default function List({ notes, setNotes, show, setShow }) {
 
     const edit = e => {
         setShow(t => true);
+        setTemp(n => n = n.filter((el, i) => i == e.target.id))
+        console.log(notes, temp);
     }
 
     return (
@@ -18,7 +20,7 @@ export default function List({ notes, setNotes, show, setShow }) {
                     notes.map((el, i) =>
                         <div className="list-item" key={i}> <span>{el}</span>
                             <div className="btns">
-                                <button className="button-53 button-52" id={i * i} onClick={edit}>Edit</button>
+                                <button className="button-53 button-52" id={i} onClick={edit}>Edit</button>
                                 <button className="button-53" id={i} onClick={remove}>x</button>
                             </div>
                         </div>)
