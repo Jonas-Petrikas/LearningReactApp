@@ -4,6 +4,7 @@ import './buttons.css';
 import './list.scss';
 import List from './Components/List';
 import Input from './Components/Input';
+import Edit from './Components/Edit';
 import { useState } from 'react';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <header className="App-header">
         <List notes={notes} setNotes={setNotes} />
         <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
+        <Edit style={{ display: 'none' }} notes={notes} setNotes={setNotes} />
       </header>
     </div>
   );

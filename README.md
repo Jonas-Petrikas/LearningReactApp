@@ -1,3 +1,9 @@
+# To-Do list
+
+1. Edit.
+2. Sutvarkyt CSS, kad atrodytų, kaip journaling app.
+3. Pasidaryt gitHub paleidžiamą versiją.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

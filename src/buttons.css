@@ -50,7 +50,15 @@
     }
 }
 
-.buttonX{
+.button-52 {
+    background-color: aquamarine;
+}
+
+.button-54 {
+    background-color: rgb(159, 48, 48);
+}
+
+.buttonX {
     background-color: transparent;
     border: 0px solid transparent;
 }
