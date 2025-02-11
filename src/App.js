@@ -11,13 +11,15 @@ function App() {
 
   const [note, setNote] = useState('');
   const [notes, setNotes] = useState(JSON.parse(localStorage.getItem("notes")) || []);
+  const [show, setShow] = useState('none');
+
 
   return (
     <div className="App">
       <header className="App-header">
-        <List notes={notes} setNotes={setNotes} />
+        <List notes={notes} setNotes={setNotes} show={show} setShow={setShow} />
         <Input note={note} setNote={setNote} notes={notes} setNotes={setNotes} />
-        <Edit style={{ display: 'none' }} notes={notes} setNotes={setNotes} />
+        <Edit show={show} setShow={setShow} notes={notes} setNotes={setNotes} />
       </header>
     </div>
   );
